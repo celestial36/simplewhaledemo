@@ -27,6 +27,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_PARU97 }}/simplewhaleci:latest
-          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_PARU97 }}/simplewhaleci:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_PARU97 }}/simplewhaleci:buildcache,mode=max     
+          tags: ${{ secrets.DOCKER_HUB_PARU97 }}/simplewhale:latest
+          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_PARU97 }}/simplewhale:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_PARU97 }}/simplewhale:buildcache,mode=max     
